@@ -19,5 +19,4 @@ set relativenumber
 set nu
 set nohlsearch
 set scrolloff=8
-
-
+set clipboard=unnamedplus
