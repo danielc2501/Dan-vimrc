@@ -20,10 +20,13 @@ set nu
 set nohlsearch
 set scrolloff=8
 set clipboard=unnamedplus
+set nocompatible
+filetype plugin on
 
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'vimwiki/vimwiki'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'gruvbox-community/gruvbox'
@@ -33,6 +36,13 @@ call plug#end()
 
 
 colorscheme gruvbox
+hi VimwikiHeader1 guifg=#FF0000
+hi VimwikiHeader2 guifg=#00FF00
+hi VimwikiHeader3 guifg=#0000FF
+hi VimwikiHeader4 guifg=#FF00FF
+hi VimwikiHeader5 guifg=#00FFFF
+hi VimwikiHeader6 guifg=#FFFF00
+
 
 " Color name (:help cterm-colors) or ANSI code
 let g:limelight_conceal_ctermfg = 'gray'
@@ -63,4 +73,6 @@ autocmd! User GoyoLeave Limelight!
 
 execute "set <M-f>=\ef"
 nnoremap <A-f> :Goyo<CR>
+
+
 
