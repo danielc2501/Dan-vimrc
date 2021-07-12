@@ -31,6 +31,10 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'gruvbox-community/gruvbox'
 Plug 'psliwka/vim-smoothie'
+Plug 'tpope/vim-speeddating'
+Plug 'oieioi/increment-day.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -74,5 +78,5 @@ autocmd! User GoyoLeave Limelight!
 execute "set <M-f>=\ef"
 nnoremap <A-f> :Goyo<CR>
 
-
+nnoremap <C-p> :Files!<CR> 
 
